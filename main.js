@@ -18,7 +18,7 @@ function validateApi(str) {
     // (25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?) - группа для одной позиции от 0 до 255
     // \. экранирование точки
 
-    console.log(regExp.test(str))
+    return regExp.test(str);
 }
 
-validateApi("100.249.0.255");
+console.log(validateApi("100.249.0.255"))
